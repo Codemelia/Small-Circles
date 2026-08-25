@@ -1,5 +1,23 @@
 # Small Circles — Project Concept & Technical Direction
 
+## Current deliverable (August 2026)
+
+The **working demo today** is a **terminal (CLI) facilitator** — not the full multi-person product yet.
+
+| | |
+|---|---|
+| **What you can try now** | A guided, CBT-informed support session in the terminal (check-in → reflection → demo peer-style replies → optional small experiment) |
+| **What it is not** | Therapy, crisis counselling, or a live circle of real people (peer replies are labeled demo templates) |
+| **How to run & how it is built** | See **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)** (plain-language architecture diagram + file map) |
+| **Research behind the prompts** | See **[docs/cbt-informed-research.md](docs/cbt-informed-research.md)** |
+
+```text
+Vision (this README)     →  Full peer-support platform for Singapore
+Current demo (CLI doc)   →  Solo terminal ritual + approved libraries + safety gate
+```
+
+---
+
 ## 1. Project Concept
 
 ### Small Circles
@@ -33,6 +51,8 @@ Each circle follows a structured weekly experience:
 6. End-of-cycle reflection and closure
 
 The platform should be designed for **peer support rather than professional treatment**.
+
+> **Implementation note:** The CLI demo implements this weekly shape for **one user**, with peer replies as **demo templates**. Real human circles remain a later milestone — see [docs/agentic-cli-demo.md](docs/agentic-cli-demo.md).
 
 ---
 
@@ -70,6 +90,8 @@ The platform should be designed for **peer support rather than professional trea
 ```
 
 The product should deliberately avoid an infinite, engagement-maximising feed.
+
+> **Demo today:** The same weekly shape runs solo in the terminal (peer step = labeled templates). Diagram + file links: [docs/agentic-cli-demo.md](docs/agentic-cli-demo.md).
 
 ---
 
@@ -252,6 +274,8 @@ This reduces the possibility of creating unhealthy dependency on the platform.
 ---
 
 # 8. Agentic AI
+
+> **Current CLI demo:** A bounded facilitator already runs in the terminal with explicit tools, a safety gate, and approved libraries. Architecture and file map (non-technical): **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**.
 
 ## 8.1 Role of the AI
 
@@ -950,28 +974,30 @@ https://www.imda.gov.sg/Imda/regulations-and-licensing-listing/content-standards
 
 For a four-week build, keep the MVP focused.
 
+> **Status:** The **agentic CLI demo** delivers a solo, CBT-informed weekly ritual with safety boundaries. It is the current shippable slice of this MVP. Full checklist items below (auth, real peers, moderation UI, etc.) remain product roadmap. See **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**.
+
 ## Core platform
 
 - [ ] Authentication
 - [ ] Pseudonymous profile
-- [ ] One support topic
+- [x] Support topics (CLI: multi-topic join; not single-topic-only)
 - [ ] Circle matching
-- [ ] 4–6 member circles
-- [ ] Circle membership
-- [ ] Weekly check-ins
-- [ ] Guided prompts
-- [ ] Posts/comments
-- [ ] Support preferences
+- [ ] 4–6 member circles (real humans)
+- [x] Circle membership (CLI: demo stand-in members per topic)
+- [x] Weekly check-ins
+- [x] Guided prompts
+- [x] Posts / peer-style replies (CLI: share + **demo** template replies, not live comments)
+- [x] Support preferences
 - [ ] Reactions
-- [ ] Circle closure
+- [x] Circle / session closure (CLI: support-map summary)
 
 ## Safety
 
 - [ ] Report
 - [ ] Block
 - [ ] Moderator dashboard
-- [ ] Crisis-support screen
-- [ ] Referral/resource flow
+- [x] Crisis-support screen (CLI: keyword gate + Singapore helpline copy)
+- [x] Referral/resource flow (approved resource list)
 - [ ] Community rules
 - [ ] Audit logs
 
@@ -988,16 +1014,16 @@ For a four-week build, keep the MVP focused.
 
 ## Agentic AI
 
-- [ ] AI Facilitator
-- [ ] AI Safety Gateway
-- [ ] Approved intervention library
-- [ ] Tool permission model
-- [ ] Safety classification
-- [ ] Crisis escalation
-- [ ] Peer-response assistance
+- [x] AI Facilitator
+- [x] AI Safety Gateway (keyword stub in CLI)
+- [x] Approved intervention library
+- [x] Tool permission model
+- [x] Safety classification (crisis / diagnosis / medication / ok)
+- [x] Crisis escalation (to approved helplines; not human moderator queue)
+- [x] Peer-response assistance (demo CBT-informed templates)
 - [ ] AI audit logging
-- [ ] Prompt-injection protection
-- [ ] AI safety test suite
+- [x] Prompt-injection protection (substance only via tools/libraries)
+- [x] AI safety test suite (CLI eval script)
 
 ---
 
@@ -1026,34 +1052,36 @@ The project should be ambitious in **quality and safety**, rather than breadth.
 
 # 31. Four-Week Development Plan
 
+> **CLI demo progress:** Items marked `[x]` below are covered by the current terminal facilitator (solo session, demo peer templates, approved libraries). Unchecked items remain for the full product. Details: **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**.
+
 ## Week 1 — Psychology, Safety & Architecture
 
 ### Product
 
-- [ ] Choose one target population
-- [ ] Choose one primary problem
-- [ ] Define circle structure
-- [ ] Define support preferences
-- [ ] Define weekly journey
-- [ ] Create personas
-- [ ] Create user journeys
+- [x] Choose one target population (adults / life-challenge topics; multi-topic in CLI)
+- [x] Choose primary problem space (life challenges under stress — multi-topic, not single-topic-only)
+- [x] Define circle structure
+- [x] Define support preferences
+- [x] Define weekly journey
+- [x] Create personas (CLI: demo circle member personas)
+- [x] Create user journeys (documented in CLI demo + vision)
 
 ### Psychology
 
-- [ ] Identify psychological principles
-- [ ] Create approved prompt library
-- [ ] Define behavioural experiments
-- [ ] Define peer-support boundaries
+- [x] Identify psychological principles
+- [x] Create approved prompt library
+- [x] Define behavioural experiments
+- [x] Define peer-support boundaries
 
 ### AI
 
-- [ ] Define AI role
-- [ ] Define prohibited behaviours
-- [ ] Define tools
-- [ ] Define tool permissions
-- [ ] Define risk levels
-- [ ] Design AI Safety Gateway
-- [ ] Design AI escalation flow
+- [x] Define AI role
+- [x] Define prohibited behaviours
+- [x] Define tools
+- [x] Define tool permissions
+- [x] Define risk levels
+- [x] Design AI Safety Gateway
+- [x] Design AI escalation flow (helpline redirect; human moderator queue later)
 
 ### Compliance
 
@@ -1067,9 +1095,9 @@ The project should be ambitious in **quality and safety**, rather than breadth.
 ### Deliverables
 
 - Requirements specification
-- System architecture
+- System architecture *(CLI architecture: [docs/agentic-cli-demo.md](docs/agentic-cli-demo.md))*
 - Database design
-- AI safety specification
+- AI safety specification *(partial: crisis/diagnosis/medication gate + evals)*
 - DPIA
 - Threat model
 - Wireframes
@@ -1083,20 +1111,20 @@ Build:
 - [ ] Authentication
 - [ ] Pseudonymous profiles
 - [ ] Circle matching
-- [ ] Circle membership
-- [ ] Check-ins
-- [ ] Weekly prompts
-- [ ] Posts
-- [ ] Comments
-- [ ] Support preferences
+- [x] Circle membership (CLI: topic join + demo stand-in members)
+- [x] Check-ins
+- [x] Weekly prompts
+- [x] Posts (CLI: share-to-circle text)
+- [ ] Comments (real peer comments — later; CLI uses demo templates)
+- [x] Support preferences
 
 AI:
 
-- [ ] Facilitator agent
-- [ ] Approved knowledge base
-- [ ] Tool calling
-- [ ] Response validation
-- [ ] Basic safety gateway
+- [x] Facilitator agent
+- [x] Approved knowledge base
+- [x] Tool calling
+- [x] Response validation (library-only content via tools; non-therapy framing)
+- [x] Basic safety gateway
 
 Priority:
 
@@ -1113,20 +1141,20 @@ Build:
 - [ ] Moderation dashboard
 - [ ] Moderator permissions
 - [ ] Audit logs
-- [ ] Crisis flow
-- [ ] Resource routing
+- [x] Crisis flow
+- [x] Resource routing
 - [ ] Account deletion
 - [ ] Privacy controls
 - [ ] Retention/deletion mechanisms
 
 AI:
 
-- [ ] Risk classification
-- [ ] Safety escalation
-- [ ] Intervention retrieval
-- [ ] Peer-response assistance
-- [ ] Prompt-injection defence
-- [ ] Tool authorization
+- [x] Risk classification
+- [x] Safety escalation (approved helplines)
+- [x] Intervention retrieval
+- [x] Peer-response assistance (demo templates)
+- [x] Prompt-injection defence (approved tools/libraries only for interventions)
+- [x] Tool authorization
 - [ ] AI audit logging
 
 This should be the application's **safety week**.
@@ -1153,6 +1181,11 @@ Run:
                         ↓
                  Final iteration
 ```
+
+- [ ] Formal usability tests
+- [x] AI evals (CLI: `scripts/eval_cbt_informed.py`)
+- [ ] Security tests
+- [ ] Closed pilot with adult participants
 
 Conduct a small closed pilot with appropriate adult participants if permitted by your institution.
 

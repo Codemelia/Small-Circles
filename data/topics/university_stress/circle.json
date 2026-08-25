@@ -6,32 +6,42 @@
     {
       "id": "peer-1",
       "display_name": "River",
-      "preferences": ["listening"],
+      "preferences": [
+        "listening"
+      ],
       "persona_note": "quiet listener"
     },
     {
       "id": "peer-2",
       "display_name": "Sage",
-      "preferences": ["shared_experience"],
+      "preferences": [
+        "shared_experience"
+      ],
       "persona_note": "shares similar Uni stories"
     },
     {
       "id": "peer-3",
       "display_name": "Kai",
-      "preferences": ["practical_ideas"],
+      "preferences": [
+        "practical_ideas"
+      ],
       "persona_note": "offers optional tips when asked"
     },
     {
       "id": "peer-4",
       "display_name": "Ash",
-      "preferences": ["gentle_accountability"],
+      "preferences": [
+        "gentle_accountability"
+      ],
       "persona_note": "checks in on small steps"
     },
     {
       "id": "peer-5",
       "display_name": "Quinn",
-      "preferences": ["encouragement"],
-      "persona_note": "warm encourager without toxic positivity"
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "warm encourager"
     }
   ]
 }

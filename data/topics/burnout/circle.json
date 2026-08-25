@@ -1,0 +1,47 @@
+{
+  "id": "demo-burnout-01",
+  "topic": "burnout",
+  "title": "Burnout circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Morgan",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "holds space for exhaustion"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Reese",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "knows prolonged overload"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Jordan",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "tiny recovery ideas"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Casey",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "rest without guilt"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Skyler",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "validates needing rest"
+    }
+  ]
+}

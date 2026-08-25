@@ -1,0 +1,47 @@
+{
+  "id": "demo-lonely-01",
+  "topic": "loneliness",
+  "title": "Loneliness circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Remy",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "gentle presence"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Harper",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "knows quiet evenings"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Drew",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "small connection ideas"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Blake",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "checks on one outreach"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Finley",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "affirms belonging"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "mailto": "your-email@example.com",
+  "per_query_limit": 25,
+  "min_year": 2015,
+  "queries": [
+    {
+      "id": "cbt_mhealth",
+      "label": "CBT and mHealth",
+      "search": "CBT mHealth digital internet-delivered iCBT"
+    },
+    {
+      "id": "peer_support_digital",
+      "label": "Digital peer support",
+      "search": "peer support digital online mobile mental health"
+    },
+    {
+      "id": "cbt_group_online",
+      "label": "CBT group / guided self-help online",
+      "search": "CBT online group guided self-help peer"
+    },
+    {
+      "id": "behavioural_activation_app",
+      "label": "Behavioural activation apps",
+      "search": "behavioral activation behavioural activation mobile app mHealth"
+    },
+    {
+      "id": "facilitation_peer_mental",
+      "label": "Facilitation of peer mental health groups",
+      "search": "peer support facilitation moderator online mental health"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "topics": [
+    {
+      "id": "university_stress",
+      "title": "University stress",
+      "summary": "Academic pressure, deadlines, and student life load.",
+      "aliases": ["university", "uni", "college", "school", "studies", "exams"]
+    },
+    {
+      "id": "burnout",
+      "title": "Burnout",
+      "summary": "Exhaustion from prolonged overload and depletion.",
+      "aliases": ["burned out", "burnt out", "exhausted", "depleted"]
+    },
+    {
+      "id": "loneliness",
+      "title": "Loneliness",
+      "summary": "Feeling disconnected or alone even around others.",
+      "aliases": ["lonely", "isolation", "isolated", "alone"]
+    },
+    {
+      "id": "workplace_stress",
+      "title": "Workplace stress",
+      "summary": "Pressure, conflict, or overload at work.",
+      "aliases": ["work", "job stress", "office", "workplace", "career stress"]
+    },
+    {
+      "id": "caregiving",
+      "title": "Caregiving",
+      "summary": "Supporting someone else while carrying your own load.",
+      "aliases": ["carer", "caregiver", "caring", "looking after"]
+    },
+    {
+      "id": "grief",
+      "title": "Grief",
+      "summary": "Loss, mourning, and adjusting after someone or something is gone.",
+      "aliases": ["bereavement", "loss", "mourning", "grieving"]
+    },
+    {
+      "id": "job_loss",
+      "title": "Job loss",
+      "summary": "Redundancy, unemployment, and identity shifts after work ends.",
+      "aliases": ["unemployed", "laid off", "retrenched", "redundancy", "fired"]
+    },
+    {
+      "id": "relationship_difficulties",
+      "title": "Relationship difficulties",
+      "summary": "Strain, distance, or conflict in close relationships.",
+      "aliases": ["relationship", "relationships", "partner", "breakup", "break up"]
+    }
+  ]
+}

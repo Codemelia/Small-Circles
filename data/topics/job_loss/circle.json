@@ -1,0 +1,47 @@
+{
+  "id": "demo-jobloss-01",
+  "topic": "job_loss",
+  "title": "Job loss circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Chris",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "listens without rushing next steps"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Pat",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "has navigated work endings"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Lee",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "optional structure ideas"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Dana",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "one small next step"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Shawn",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "separates worth from role"
+    }
+  ]
+}

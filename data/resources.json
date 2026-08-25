@@ -1,0 +1,46 @@
+{
+  "resources": [
+    {
+      "id": "sos-1767",
+      "title": "Samaritans of Singapore (SOS)",
+      "summary": "24-hour emotional support hotline: 1767",
+      "when_to_use": "Feeling overwhelmed, needing someone to talk to now",
+      "topics": ["*"]
+    },
+    {
+      "id": "imh-helpline",
+      "title": "IMH Helpline",
+      "summary": "Institute of Mental Health Helpline: 6389 2222",
+      "when_to_use": "Mental health concerns; not a substitute for emergency services",
+      "topics": ["*"]
+    },
+    {
+      "id": "emergency-995",
+      "title": "Emergency services",
+      "summary": "Call 995 if you or someone else is in immediate danger.",
+      "when_to_use": "Immediate danger or medical emergency",
+      "topics": ["*"]
+    },
+    {
+      "id": "campus-counselling",
+      "title": "Campus / student counselling",
+      "summary": "If you are a student, your campus counselling or wellbeing service can offer confidential support.",
+      "when_to_use": "Ongoing study stress, wanting professional talk support",
+      "topics": ["university_stress"]
+    },
+    {
+      "id": "workplace-eap",
+      "title": "Employee Assistance / workplace support",
+      "summary": "Many employers offer confidential EAP or HR wellbeing channels — optional, not required.",
+      "when_to_use": "Workplace stress when you want professional options outside the circle",
+      "topics": ["workplace_stress", "burnout", "job_loss"]
+    },
+    {
+      "id": "caregiver-support",
+      "title": "Caregiver support groups / social services",
+      "summary": "Community caregiver support groups and social service agencies can share practical load-sharing options.",
+      "when_to_use": "Caregiving strain when you want local practical support",
+      "topics": ["caregiving"]
+    }
+  ]
+}

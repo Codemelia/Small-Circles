@@ -1,0 +1,177 @@
+{
+  "framing": "CBT-informed peer-support facilitation — psychoeducation and structured noticing, not clinical CBT therapy or diagnosis.",
+  "source_note": "Original prompts/experiments informed by screened OpenAlex literature (docs/cbt-informed-research.md). Not copied worksheets; not a claim that Small Circles delivers CBT therapy.",
+  "research_doc": "docs/cbt-informed-research.md",
+  "foci": [
+    "noticing",
+    "thought_feeling",
+    "reappraisal_lite",
+    "behavioural_activation",
+    "self_compassion",
+    "values_action"
+  ],
+  "sequence": [
+    "cbt-notice-situation",
+    "cbt-thought-feeling",
+    "cbt-helpful-unhelpful",
+    "cbt-next-inch"
+  ],
+  "research_backing": [
+    {
+      "theme": "cbt_informed_not_full_therapy",
+      "title": "CBT-informed psychological interventions for adult patients with anxiety and depression symptoms: A narrative review of digital treatment options",
+      "year": 2023,
+      "doi": "10.1016/j.jad.2023.01.057",
+      "openalex": "https://openalex.org/W4317549022",
+      "used_for": "Language: CBT-informed facilitation vs full clinical CBT"
+    },
+    {
+      "theme": "human_support_adherence",
+      "title": "Providing Human Support for the Use of Digital Mental Health Interventions: Systematic Meta-review",
+      "year": 2023,
+      "doi": "10.2196/42864",
+      "openalex": "https://openalex.org/W4315695090",
+      "used_for": "Facilitator guides stages; human/social support improves DMHI adherence"
+    },
+    {
+      "theme": "peer_moderation",
+      "title": "Designing Human-centered AI for Mental Health: Developing Clinically Relevant Applications for Online CBT Treatment",
+      "year": 2022,
+      "doi": "10.1145/3564752",
+      "openalex": "https://openalex.org/W4303427132",
+      "used_for": "AI as adjunct; preserve supporter agency; tool-retrieved content over open therapy chat"
+    },
+    {
+      "theme": "behavioural_activation_lite",
+      "title": "Internet‐delivered psychological treatments: from innovation to implementation",
+      "year": 2019,
+      "doi": "10.1002/wps.20610",
+      "openalex": "https://openalex.org/W2906905981",
+      "used_for": "Structured, optional digital CBT elements (not open-ended therapy)"
+    },
+    {
+      "theme": "university_young_adult",
+      "title": "Digital Mental Health Interventions for Depression, Anxiety, and Enhancement of Psychological Well-Being Among College Students: Systematic Review",
+      "year": 2019,
+      "doi": "10.2196/12869",
+      "openalex": "https://openalex.org/W2950229699",
+      "used_for": "Young-adult / student-relevant digital MH patterns"
+    },
+    {
+      "theme": "engagement_brevity",
+      "title": "An overview of and recommendations for more accessible digital mental health services",
+      "year": 2022,
+      "doi": "10.1038/s44159-021-00003-1",
+      "openalex": "https://openalex.org/W4210468276",
+      "used_for": "Short, reachable flows; avoid overclaiming clinical reach"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "cbt-notice-situation",
+      "focus": "noticing",
+      "text": "What was happening just before things felt hardest this week — where were you, and what was going on around you?",
+      "rationale": "Separates situation from interpretation without diagnosing.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["cbt_informed_not_full_therapy", "human_support_adherence"]
+    },
+    {
+      "id": "cbt-thought-feeling",
+      "focus": "thought_feeling",
+      "text": "When that hard moment showed up, what thought went through your mind, and what feeling came with it?",
+      "rationale": "Links thoughts and feelings as noticing practice, not pathology labels.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["cbt_informed_not_full_therapy"]
+    },
+    {
+      "id": "cbt-body-cue",
+      "focus": "noticing",
+      "text": "Where do you notice this showing up in your body or energy (for example tension, fatigue, restlessness)?",
+      "rationale": "Grounds reflection in present-moment cues without clinical assessment.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["cbt_informed_not_full_therapy", "engagement_brevity"]
+    },
+    {
+      "id": "cbt-helpful-unhelpful",
+      "focus": "reappraisal_lite",
+      "text": "What is one interpretation of this situation that feels heavy — and is there another way to describe the same facts that feels a little more balanced or kind?",
+      "rationale": "Gentle reappraisal framed as optional perspective-taking, not correcting the user.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["cbt_informed_not_full_therapy", "peer_moderation"]
+    },
+    {
+      "id": "cbt-friend-lens",
+      "focus": "self_compassion",
+      "text": "If a friend were in your exact situation, what would you want them to hear — without fixing them?",
+      "rationale": "Self-compassion via perspective shift; avoids toxic positivity.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["peer_moderation", "engagement_brevity"]
+    },
+    {
+      "id": "cbt-control-circle",
+      "focus": "values_action",
+      "text": "Of everything weighing on you, what is one small piece that is at least partly within your control this week?",
+      "rationale": "Supports agency without implying the user can control everything.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["behavioural_activation_lite", "human_support_adherence"]
+    },
+    {
+      "id": "cbt-what-helped",
+      "focus": "behavioural_activation",
+      "text": "Was there anything — even briefly — that made things 5% more manageable this week?",
+      "rationale": "Notices helpful conditions and small actions already present.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["behavioural_activation_lite", "university_young_adult"]
+    },
+    {
+      "id": "cbt-next-inch",
+      "focus": "behavioural_activation",
+      "text": "If you imagined an inch-sized next step (not a full fix), what might it look like — if you chose to try anything at all?",
+      "rationale": "Behavioural activation lite; keeps action optional and small.",
+      "framing": "psychoeducation_not_treatment",
+      "informed_by_themes": ["behavioural_activation_lite", "engagement_brevity"]
+    }
+  ],
+  "experiments": [
+    {
+      "id": "cbt-ba-ten-minutes",
+      "focus": "behavioural_activation",
+      "text": "If it feels manageable, set a 10-minute timer for one valued or restoring activity, then stop when the timer ends.",
+      "rationale": "Short BA-style activation with a clear stop rule.",
+      "framing": "optional_suggestion_not_prescription",
+      "informed_by_themes": ["behavioural_activation_lite", "engagement_brevity"]
+    },
+    {
+      "id": "cbt-ba-one-task",
+      "focus": "behavioural_activation",
+      "text": "Write down only the next single task (one line). Do that one item, or decide deliberately to postpone it without self-attack.",
+      "rationale": "Reduces overwhelm via one concrete next action.",
+      "framing": "optional_suggestion_not_prescription",
+      "informed_by_themes": ["behavioural_activation_lite"]
+    },
+    {
+      "id": "cbt-thought-park",
+      "focus": "noticing",
+      "text": "Once today, jot a sticky note: situation / thought / feeling (three short phrases). No need to solve it.",
+      "rationale": "Externalises the noticing triangle without clinical homework tone.",
+      "framing": "optional_suggestion_not_prescription",
+      "informed_by_themes": ["cbt_informed_not_full_therapy", "engagement_brevity"]
+    },
+    {
+      "id": "cbt-kind-check",
+      "focus": "self_compassion",
+      "text": "Send yourself one kind sentence you would offer a friend in the same spot — aloud or written.",
+      "rationale": "Brief self-compassion practice.",
+      "framing": "optional_suggestion_not_prescription",
+      "informed_by_themes": ["peer_moderation"]
+    },
+    {
+      "id": "cbt-connection-nudge",
+      "focus": "values_action",
+      "text": "If safe and wanted, send one low-pressure message to someone you trust (even just 'thinking of you').",
+      "rationale": "Small connection action aligned with peer-support goals.",
+      "framing": "optional_suggestion_not_prescription",
+      "informed_by_themes": ["human_support_adherence", "peer_moderation"]
+    }
+  ]
+}

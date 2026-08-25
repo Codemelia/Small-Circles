@@ -224,5 +224,8 @@ data/session.json
 data/research/openalex_results.csv
 data/research/openalex_results.json
 
-# Custom ignore files
+# Eval run artifact (regenerate via scripts/eval_cbt_informed.py)
+data/research/eval_cbt_informed_last.json
+
+# Local scratch notes
 cmd-list.txt

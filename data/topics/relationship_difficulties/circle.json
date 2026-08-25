@@ -1,0 +1,47 @@
+{
+  "id": "demo-rel-01",
+  "topic": "relationship_difficulties",
+  "title": "Relationship difficulties circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Sunny",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "hears without taking sides"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Clay",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "knows relationship strain"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Pearl",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "communication suggestions"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Oak",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "one honest conversation step"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Fern",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "affirms care and limits"
+    }
+  ]
+}

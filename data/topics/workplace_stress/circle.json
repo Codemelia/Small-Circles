@@ -1,0 +1,47 @@
+{
+  "id": "demo-work-01",
+  "topic": "workplace_stress",
+  "title": "Workplace stress circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Alex",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "listens about work load"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Sam",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "has seen tough teams"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Taylor",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "boundary ideas"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Jamie",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "one boundary check-in"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Riley",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "affirms effort"
+    }
+  ]
+}

@@ -1,22 +1,55 @@
 {
-  "listening": [
-    "It sounds like {summary}. I'm here with you — no advice unless you want it.",
-    "Thanks for sharing that. I'm sitting with what you said about {summary}."
-  ],
-  "shared_experience": [
-    "I've felt something similar with coursework. What helped me a little was {hint}.",
-    "University stress hit me that way too. You're not the only one in this."
-  ],
-  "practical_ideas": [
-    "One small thing that sometimes helps: {hint}. Take or leave it.",
-    "If useful, you could try breaking one task into a 25-minute block — only if that feels doable."
-  ],
-  "gentle_accountability": [
-    "If you want, we can check in next time on one tiny step you choose.",
-    "No pressure — if you pick one small action, I'm happy to ask how it went later."
-  ],
-  "encouragement": [
-    "You're showing up and reflecting — that already counts for something.",
-    "It's okay that this week feels heavy. Taking a moment to notice it matters."
-  ]
+  "framing": "CBT-informed peer replies — preference-matched support that reinforces noticing, validation, gentle perspective-taking, or optional small actions. Peers are not CBT therapists.",
+  "source_note": "Original templates informed by directional/nondirectional peer-support and peer+structured-prompt literature (docs/cbt-informed-research.md).",
+  "preference_norms": {
+    "listening": {
+      "cbt_move": "validation_noticing",
+      "norm": "Reflect feelings/situation; do not advise or reframe unless asked."
+    },
+    "shared_experience": {
+      "cbt_move": "peer_perspective",
+      "norm": "Share a similar noticing moment; optional tiny coping example — not fixing them."
+    },
+    "practical_ideas": {
+      "cbt_move": "ba_or_reappraisal_suggestion",
+      "norm": "Offer one optional inch-sized idea (BA-lite or balanced take); take-or-leave."
+    },
+    "gentle_accountability": {
+      "cbt_move": "plan_do_review_lite",
+      "norm": "Invite one tiny chosen step and a soft later check-in — no pressure."
+    },
+    "encouragement": {
+      "cbt_move": "self_compassion_reinforce",
+      "norm": "Affirm showing up and noticing; avoid toxic positivity or 'just think positive'."
+    }
+  },
+  "hints": {
+    "listening": "naming what feels heaviest without solving it yet",
+    "shared_experience": "pausing to notice situation / thought / feeling before pushing on",
+    "practical_ideas": "writing one next inch-sized step only",
+    "gentle_accountability": "choosing one tiny step to revisit later",
+    "encouragement": "treating noticing itself as a worthwhile step"
+  },
+  "templates": {
+    "listening": [
+      "Hearing you on {summary}. I'm with you in noticing how hard that feels — no advice from me unless you want it.",
+      "Thanks for naming {summary}. Sitting with the feeling/situation with you, without trying to fix it."
+    ],
+    "shared_experience": [
+      "I've had a stretch like that. What helped a little was {hint} — not a fix, just something that made it 5% more manageable.",
+      "You're not alone in this. When I was in something similar, noticing the situation vs the story in my head took a bit of pressure off."
+    ],
+    "practical_ideas": [
+      "One optional idea, take or leave: {hint}. Only if it feels doable.",
+      "If useful: pick one balanced way to describe the same facts, or one tiny next action — skip either if it doesn't fit."
+    ],
+    "gentle_accountability": [
+      "If you want, choose one tiny step for later and we can gently ask how it went next time — no pressure either way.",
+      "No push from me. If you pick one small action around {summary}, I'm happy to check in softly later."
+    ],
+    "encouragement": [
+      "You're showing up and noticing {summary} — that already counts. Kindness to yourself here is allowed.",
+      "It's okay that this feels heavy. Taking a moment to notice it matters; you don't have to be 'fixed' today."
+    ]
+  }
 }

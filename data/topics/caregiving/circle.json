@@ -1,0 +1,47 @@
+{
+  "id": "demo-care-01",
+  "topic": "caregiving",
+  "title": "Caregiving circle",
+  "members": [
+    {
+      "id": "peer-1",
+      "display_name": "Noel",
+      "preferences": [
+        "listening"
+      ],
+      "persona_note": "holds caregiver stories"
+    },
+    {
+      "id": "peer-2",
+      "display_name": "Eden",
+      "preferences": [
+        "shared_experience"
+      ],
+      "persona_note": "knows dual loads"
+    },
+    {
+      "id": "peer-3",
+      "display_name": "Cameron",
+      "preferences": [
+        "practical_ideas"
+      ],
+      "persona_note": "tiny relief ideas"
+    },
+    {
+      "id": "peer-4",
+      "display_name": "Avery",
+      "preferences": [
+        "gentle_accountability"
+      ],
+      "persona_note": "self-care check-ins"
+    },
+    {
+      "id": "peer-5",
+      "display_name": "Rowan",
+      "preferences": [
+        "encouragement"
+      ],
+      "persona_note": "honours the care given"
+    }
+  ]
+}
