@@ -1,0 +1,22 @@
+{
+  "listening": [
+    "It sounds like {summary}. I'm here with you — no advice unless you want it.",
+    "Thanks for sharing that. I'm sitting with what you said about {summary}."
+  ],
+  "shared_experience": [
+    "I've felt something similar with coursework. What helped me a little was {hint}.",
+    "University stress hit me that way too. You're not the only one in this."
+  ],
+  "practical_ideas": [
+    "One small thing that sometimes helps: {hint}. Take or leave it.",
+    "If useful, you could try breaking one task into a 25-minute block — only if that feels doable."
+  ],
+  "gentle_accountability": [
+    "If you want, we can check in next time on one tiny step you choose.",
+    "No pressure — if you pick one small action, I'm happy to ask how it went later."
+  ],
+  "encouragement": [
+    "You're showing up and reflecting — that already counts for something.",
+    "It's okay that this week feels heavy. Taking a moment to notice it matters."
+  ]
+}

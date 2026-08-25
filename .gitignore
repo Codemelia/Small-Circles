@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Small Circles CLI MVP — runtime session (created by the app)
+data/session.json

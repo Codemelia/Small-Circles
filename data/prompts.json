@@ -1,0 +1,20 @@
+{
+  "topic": "university_stress",
+  "prompts": [
+    {
+      "id": "energy-drain",
+      "text": "What has been taking most of your energy this week?",
+      "rationale": "Noticing load without diagnosing"
+    },
+    {
+      "id": "what-helped",
+      "text": "Was there anything small that helped, even briefly?",
+      "rationale": "Recognising strengths and helpful conditions"
+    },
+    {
+      "id": "self-kindness",
+      "text": "If a friend were in your situation, what would you want them to hear?",
+      "rationale": "Self-compassion via perspective shift"
+    }
+  ]
+}
