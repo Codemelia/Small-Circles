@@ -9,6 +9,7 @@ This folder holds **search results** used to design CBT-informed facilitation (n
 | Design notes from screening | [`docs/cbt-informed-research.md`](../../docs/cbt-informed-research.md) |
 | Prompts/experiments informed by that work | [`data/interventions/cbt_informed.json`](../interventions/cbt_informed.json) |
 | How the CLI uses those libraries | [`docs/agentic-cli-demo.md`](../../docs/agentic-cli-demo.md) |
+| Target system design & stack | [`docs/system-design.md`](../../docs/system-design.md) |
 
 After you run a search, CSV/JSON dumps appear here (they are gitignored — regenerate anytime):
 

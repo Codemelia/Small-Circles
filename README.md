@@ -8,12 +8,14 @@ The **working demo today** is a **terminal (CLI) facilitator** — not the full 
 |---|---|
 | **What you can try now** | A guided, CBT-informed support session in the terminal (check-in → reflection → demo peer-style replies → optional small experiment) |
 | **What it is not** | Therapy, crisis counselling, or a live circle of real people (peer replies are labeled demo templates) |
-| **How to run & how it is built** | See **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)** (plain-language architecture diagram + file map) |
+| **How to run the CLI demo** | See **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)** (plain-language architecture diagram + file map) |
+| **System design & target architecture** | See **[docs/system-design.md](docs/system-design.md)** (stack, platform, modular monolith, evolution path) |
 | **Research behind the prompts** | See **[docs/cbt-informed-research.md](docs/cbt-informed-research.md)** |
 
 ```text
-Vision (this README)     →  Full peer-support platform for Singapore
-Current demo (CLI doc)   →  Solo terminal ritual + approved libraries + safety gate
+Vision (this README)           →  Full peer-support platform for Singapore
+System design (system-design)  →  Target architecture + recommended stack
+Current demo (CLI doc)         →  Solo terminal ritual + approved libraries + safety gate
 ```
 
 ---
@@ -275,7 +277,7 @@ This reduces the possibility of creating unhealthy dependency on the platform.
 
 # 8. Agentic AI
 
-> **Current CLI demo:** A bounded facilitator already runs in the terminal with explicit tools, a safety gate, and approved libraries. Architecture and file map (non-technical): **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**.
+> **Current CLI demo:** A bounded facilitator already runs in the terminal with explicit tools, a safety gate, and approved libraries. How to run: **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**. Target architecture & stack: **[docs/system-design.md](docs/system-design.md)**.
 
 ## 8.1 Role of the AI
 
@@ -1357,6 +1359,9 @@ This is an especially strong part of the project given an interest in SDET.
 ---
 
 # 38. Final System Architecture
+
+> **Engineering detail:** platform, stack, modular monolith, data guidance, and CLI→product evolution are in **[docs/system-design.md](docs/system-design.md)**.  
+> **Current demo loop:** **[docs/agentic-cli-demo.md](docs/agentic-cli-demo.md)**.
 
 ```text
                          SMALL CIRCLES

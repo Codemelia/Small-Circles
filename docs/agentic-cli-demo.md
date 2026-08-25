@@ -7,6 +7,7 @@ This is the **working demo** of Small Circles today: a chat in your terminal tha
 It is **not** therapy, not a crisis service, and **not** a live group of real people yet. Peer replies in this demo are clearly labeled **templates** (stand-ins) until a later product stage adds real human circles.
 
 For the full long-term product vision, see [README.md](../README.md).  
+For target system design, stack, and architecture, see [system-design.md](system-design.md).  
 For how research shaped the prompts, see [cbt-informed-research.md](cbt-informed-research.md).
 
 ---
