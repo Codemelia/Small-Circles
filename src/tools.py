@@ -58,8 +58,10 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
         "function": {
             "name": "get_session_context",
             "description": (
-                "Get the current user session: stage, topic, preferences, check-in, "
-                "and circle id. Call this when you need orientation."
+                "Get session stage, topic, preferences, and next_hint. "
+                "Use sparingly — only if the user asks for status/progress, or you "
+                "cannot tell what they want from their message. Do not call this on "
+                "every turn, and never as a prelude to preference-only updates."
             ),
             "parameters": {"type": "object", "properties": {}, "additionalProperties": False},
         },
@@ -79,7 +81,9 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
             "description": (
                 "Set the user's support preferences (1-2). Keys: listening, "
                 "shared_experience, practical_ideas, gentle_accountability, encouragement. "
-                "All selected preferences are stored and used together for banners and peer replies."
+                "All selected preferences are stored and used together for banners and peer replies. "
+                "When the user only changes preferences, call THIS tool alone — do not also "
+                "fetch prompts, peer replies, or experiments in the same turn."
             ),
             "parameters": {
                 "type": "object",
@@ -125,7 +129,9 @@ TOOL_SCHEMAS: list[dict[str, Any]] = [
                 "psychoeducation for peer-support facilitation — NOT clinical CBT therapy. "
                 "Always use this for reflection prompts; do not invent worksheets. "
                 "Omit focus/prompt_id to follow check-in routing or the library sequence. "
-                "Set advance_sequence=true after a reflection to fetch the next prompt in sequence."
+                "Set advance_sequence=true after a reflection to fetch the next prompt in sequence. "
+                "Call only when the user asks for a prompt / reflection / next prompt — "
+                "not after unrelated actions like setting preferences."
             ),
             "parameters": {
                 "type": "object",
@@ -361,12 +367,12 @@ def next_ritual_step(session: Session) -> dict[str, str]:
     if not user or not user.preferences:
         return {
             "next_stage": "PREFERENCES",
-            "hint": "Call set_support_preferences (1–2 prefs).",
+            "hint": "When the user sets preferences, call set_support_preferences only.",
         }
     if session.check_in is None:
         return {
             "next_stage": "CHECK_IN",
-            "hint": "Call record_check_in (energy/stress/connection 1–5).",
+            "hint": "When the user wants to check in, call record_check_in (energy/stress/connection 1–5).",
         }
     if not session.completed_prompt_ids and session.stage in (
         "CHECK_IN",
@@ -377,7 +383,10 @@ def next_ritual_step(session: Session) -> dict[str, str]:
         focus = session.suggested_prompt_focus or "noticing"
         return {
             "next_stage": "REFLECTION",
-            "hint": f"Call get_weekly_prompt (suggested focus: {focus}).",
+            "hint": (
+                f"When the user asks for a reflection prompt, call get_weekly_prompt "
+                f"(suggested focus: {focus}). Do not auto-fetch a prompt after unrelated actions."
+            ),
         }
     if session.reflection is None and session.prompt_id:
         return {
@@ -388,14 +397,18 @@ def next_ritual_step(session: Session) -> dict[str, str]:
         return {
             "next_stage": "PEER_POST",
             "hint": (
-                "Invite a share, then suggest_peer_replies (label as demo templates)."
+                "When the user wants to share with the circle, call suggest_peer_replies "
+                "(label as demo templates)."
             ),
         }
     if session.experiment is None:
         focus = session.suggested_experiment_focus or "behavioural_activation"
         return {
             "next_stage": "EXPERIMENT",
-            "hint": f"Call suggest_experiment (suggested focus: {focus}).",
+            "hint": (
+                f"When the user asks for an experiment, call suggest_experiment "
+                f"(suggested focus: {focus})."
+            ),
         }
     if session.stage != "DONE":
         return {
