@@ -219,3 +219,10 @@ __marimo__/
 
 # Small Circles CLI MVP — runtime session (created by the app)
 data/session.json
+
+# Literature search outputs (regenerate via scripts/lit_search_openalex.py)
+data/research/openalex_results.csv
+data/research/openalex_results.json
+
+# Custom ignore files
+cmd-list.txt
